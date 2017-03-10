@@ -25,7 +25,7 @@ twitter_username: ShiftyCalendar
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-merlot
+theme: jekyll-theme-cayman
 gems:
   - jekyll-feed
 exclude:
