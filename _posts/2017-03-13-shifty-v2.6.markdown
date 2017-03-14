@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Shifty v2.6"
+title:  "Shifty v2.6 is now available"
 date:   2017-03-13 23:42:00 -0500
-categories: jekyll update
+categories: shifty update
 ---
 
-## Shifty 2.6 is [now available](https://itunes.apple.com/us/app/shifty-unpredictable-work-schedules-and-events/id718617321?mt=8)!
+### Get it from the [App Store](https://itunes.apple.com/us/app/shifty-unpredictable-work-schedules-and-events/id718617321?mt=8)!
 
 #### What's new?
 * View all your shifts! Why was the max 4? Nonsense, that was!
