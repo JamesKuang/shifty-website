@@ -8,6 +8,6 @@ title: Shifty
 
 ## A Delightful Shift Calendar
 
-![Download on App Store]({{ site.url }}/assets/download_on_app_store.png)
+![Download on App Store](/assets/download_on_app_store.png)
 
 [Download](https://itunes.apple.com/us/app/apple-store/id718617321?mt=8)
