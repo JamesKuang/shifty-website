@@ -54,9 +54,13 @@ main {
 time {
 	color: #898989;
 }
-.container {
+.nav-container {
 	max-width: $content-width;
 	margin: 0 auto;
+}
+
+.vertical-center-container {
+	align-items: center;
 }
 
 /* Aside */
