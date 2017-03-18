@@ -41,7 +41,7 @@ a:hover {
 	text-decoration: underline;
 }
 header {
-	background-image: url("{{ site.url }}/assets/website_background.png");
+	background-image: url("/assets/website_background.png");
 	background-position: 30% 80%;
 	background-attachment: fixed;
 	padding: 0px 15px;
