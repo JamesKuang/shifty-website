@@ -2,14 +2,12 @@
 	<div class="nav-container">
 		<nav>
 			<ul>
-				<li><a href="{{ site.baseurl }}">Home</a></li>
+				<li><a href="{{ site.url }}">Home</a></li>
 				<li><a href="https://itunes.apple.com/us/app/apple-store/id718617321?mt=8">Download</a></li>
 				<!--<li><a href="https://itunes.apple.com/us/app/apple-store/id718617321?mt=8"><img src="{{ site.url }}/assets/download_on_app_store.png" alt="Download on App Store</a>" /></a></li>-->
 				{% for page in site.pages %} {% if page.title %}
 				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
 				{% endif %} {% endfor %}
-			</ul>
-			</li>
 			</ul>
 		</nav>
 	</div>
@@ -17,7 +15,10 @@
 
 <header>
 	<div class="vertical-center-container">
-		<h1><a href="{{ site.baseurl }}">Shifty</a></h1>
-		<h3>A Delightful Shift Calendar</h3>
+		<ol>
+			<li><h1>Shifty</h1></li>
+			<li><h2>A Delightful Shift Calendar</h2></li>
+			<li><a href="https://itunes.apple.com/us/app/apple-store/id718617321?mt=8"><img src="{{ site.url }}/assets/download_on_app_store.png"/></a></li>
+		</ol>
 	</div>
 </header>
