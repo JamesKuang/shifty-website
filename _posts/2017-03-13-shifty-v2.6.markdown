@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Shifty v2.6 is now available"
 date:   2017-03-13 23:42:00 -0500
 categories: shifty update
