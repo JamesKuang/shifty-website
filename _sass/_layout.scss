@@ -81,8 +81,8 @@ time {
 	max-width: $content-width;
 	margin: 0 auto;
 }
-.vertical-center-container {
-	align-items: center;
+.align-center-container {
+	align-items: baseline;
 }
 
 /* Aside */
@@ -138,13 +138,13 @@ footer {
 
 /* Main Page Content */
 main-page-content {
-	display: flex;
 	justify-content: center;
 	text-align: center;
-	ol {
+	ul {
+		padding-top: 10px;
 		list-style: none;
-		li:not(:last-child) {
-			margin-bottom: 100px;
+		li {
+			margin: 40px 0 100px 0;
 		}
 	}
 }
