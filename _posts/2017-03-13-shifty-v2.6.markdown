@@ -1,13 +1,10 @@
 ---
 layout: default
-title:  "Shifty v2.6 is now available"
+title:  "v2.6.0"
 date:   2017-03-13 23:42:00 -0500
 categories: shifty update
 ---
 
-### Get it from the [App Store](https://itunes.apple.com/us/app/shifty-unpredictable-work-schedules-and-events/id718617321?mt=8)!
-
-#### What's new?
 * View all your shifts! Why was the max 4? Nonsense, that was!
 * In the Today extension, dots got larger, or in circle speak, more radial...
 * When Exporting shifts, the new behavior will now only export today and future dates. Because your shifts are obviously only in the future...just like your sick days.
