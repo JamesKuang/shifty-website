@@ -25,17 +25,17 @@ Shifty makes it easy to add and view events that always change, which are common
 
 #### Features
 
-• Simply tap on the dates you work to mark them
-• Assign different start and end times for each shift
-• Create up to 6 shifts to track different shift times, sick and vacation days, etc.
-• View up to 3 shifts per day
-• Export shifts to any of your external calendars (Google Calendar, iCloud calendar, etc.)
-• Have a photo of your schedule? Conveniently open it in Shifty and mark dates side by side
-• Universal app with iPad support
-• View your upcoming shifts on Apple Watch
+- Simply tap on the dates you work to mark them
+- Assign different start and end times for each shift
+- Create up to 8 shifts to track different shift times, sick and vacation days, etc.
+- Export shifts to any of your external calendars (Google Calendar, iCloud calendar, etc.)
+- Have a photo of your schedule? Conveniently open it in Shifty and mark dates side by side
+- Universal app with iPad support
+- View your upcoming shifts on Apple Watch
+- Quickly send your shifts in iMessages
 
 
-Shifty has an IAP that unlocks a couple convenience features like additional shift groups and the ability to export to more calendars.
+Shifty has an IAP that unlocks additional shift groups.
  
 
 #### About
