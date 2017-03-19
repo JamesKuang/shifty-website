@@ -4,6 +4,16 @@ title: Press Kit
 permalink: /press/
 ---
 
+<div class="horizontal-images-3">
+    <img src="{{ site.url }}/assets/iPhone6-01CalendarScreen.png" width="250">
+    <img src="{{ site.url }}/assets/iPhone6-02EditShiftScreen.png" width="250">
+    <img src="{{ site.url }}/assets/iPhone6-04ShiftColorsScreen.png" width="250">
+</div>
+
+<!--![]({{ site.url }}/assets/iPhone6-01CalendarScreen.png)-->
+<!--![]({{ site.url }}/assets/iPhone6-02EditShiftScreen.png)-->
+<!--![]({{ site.url }}/assets/iPhone6-04ShiftColorsScreen.png)-->
+
 Shifty is available on the [App Store](https://itunes.apple.com/us/app/apple-store/id718617321?mt=8). Download the media kit [here]({{ site.url }}/assets/downloads/Shifty 2.0 Press Kit.zip).
 
 #### Product
