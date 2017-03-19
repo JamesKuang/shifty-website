@@ -33,12 +33,12 @@ h3 {
 a,
 a:visited {
 	color: $link-color;
-	text-decoration: underline;
+	text-decoration: none;
 	font-weight: bold;
 }
 a:hover {
 	color: $link-hover-color;
-	text-decoration: underline;
+	text-decoration: none;
 }
 header {
 	background-image: url("../assets/website_background.png");
@@ -64,11 +64,14 @@ header {
 		font-size: 2.5em;
 		font-weight: 200;
 	}
-	ol {
+	ul {
 		list-style: none;
+		img {
+			height: 6em;
+		}
 	}
 	img {
-		height: 6em;
+		height: 10em;
 	}
 }
 main {
@@ -82,49 +85,42 @@ time {
 .nav-container {
 	max-width: $content-width;
 	margin: 0 auto;
+	list-style: none;
+	li {
+		display: inline;
+		a {
+			display: inline-block;
+			padding: 15px;
+			line-height: 20px;
+		}
+	}
 }
 .align-center-container {
 	align-items: baseline;
+	display: block
 }
 
 /* Aside */
 
 aside {
 	position: fixed;
+	text-align: center;
 	top: 0;
-	left: 0;
 	background: #fff;
 	width: 100%;
 	z-index: 2;
 	border-bottom: 1px solid lighten($light, 30%);
 	box-shadow: 0px 1px 1px RGBA(4, 25, 54, .1);
 	nav {
-		float: right;
-		max-width: 800px;
-		margin: 0 auto;
-		ul {
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			li {
-				float: left;
-				position: relative;
-				a {
-					text-decoration: none;
-					display: block;
-					padding: 15px;
+		ul li a {
 					font-family: 'Muli', sans-serif;
-					line-height: 20px;
 					margin-bottom: -1px;
 					box-shadow: 0;
 					&:hover,
 					&:active {
 						background: $header;
-						text-decoration: none;
 						color: $main;
-					}
 				}
-			}
 		}
 		&:after {
 			content: '';

@@ -1,24 +1,33 @@
 <aside>
-	<div class="nav-container">
-		<nav>
-			<ul>
-				<li><a href="{{ site.url }}">Home</a></li>
-				<li><a href="https://itunes.apple.com/us/app/apple-store/id718617321?mt=8">Download</a></li>
-				<!--<li><a href="https://itunes.apple.com/us/app/apple-store/id718617321?mt=8"><img src="{{ site.url }}/assets/download_on_app_store.png" alt="Download on App Store</a>" /></a></li>-->
-				{% for page in site.pages %} {% if page.title %}
-				<li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-				{% endif %} {% endfor %}
-			</ul>
-		</nav>
-	</div>
+    <div>
+        <nav>
+            <ul class="nav-container">
+                <li><a href="{{ site.url }}">Home</a></li>
+                <li><a href="https://itunes.apple.com/us/app/apple-store/id718617321?mt=8">Download</a></li>
+                <!--<li><a href="https://itunes.apple.com/us/app/apple-store/id718617321?mt=8"><img src="{{ site.url }}/assets/download_on_app_store.png" alt="Download on App Store</a>" /></a></li>-->
+                {% for page in site.pages %} {% if page.title %} {% if page.title != "Press" %}
+                <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                {% endif %} {% endif %} {% endfor %}
+            </ul>
+        </nav>
+    </div>
 </aside>
 
 <header>
-	<div class="align-center-container">
-		<ol>
-			<li><h1>Shifty</h1></li>
-			<li><h2>A Delightful Shift Calendar</h2></li>
-			<li><a href="https://itunes.apple.com/us/app/apple-store/id718617321?mt=8"><img src="{{ site.url }}/assets/download_on_app_store.png"/></a></li>
-		</ol>
+	<div>
+		<img src="{{ site.url }}/assets/shifty_icon_transparent_bg.png" />
 	</div>
+    <div>
+        <ul>
+            <li>
+				<h1>Shifty</h1>
+            </li>
+            <li>
+                <h2>A Delightful Shift Calendar</h2>
+            </li>
+            <li>
+                <a href="https://itunes.apple.com/us/app/apple-store/id718617321?mt=8"><img src="{{ site.url }}/assets/download_on_app_store.png" /></a>
+            </li>
+        </ul>
+    </div>
 </header>
