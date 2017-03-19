@@ -1,0 +1,9 @@
+---
+layout: default
+title:  "2.2.0"
+date:   2016-7-27 09:42:00 -0500
+categories: shifty update
+---
+
+* You can now re-order your shift groups. Simply hold your finger over any shift group and drag it up or down.
+* Fixed an issue that sometimes caused a failure when making the In-App purchase.

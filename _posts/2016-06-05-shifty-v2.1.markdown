@@ -1,0 +1,10 @@
+---
+layout: default
+title:  "2.1.0"
+date:   2016-6-5 09:42:00 -0500
+categories: shifty update
+---
+
+* The share screenshot button is back and lives on the top right of the calendar screen.
+* Fixed a crash on app open for users upgrading from a previous version.
+* Fixed a bug that prevented exporting dates when the end time is on the next day.

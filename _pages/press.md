@@ -32,7 +32,7 @@ Shifty makes it easy to add and view events that always change, which are common
 - Have a photo of your schedule? Conveniently open it in Shifty and mark dates side by side
 - Universal app with iPad support
 - View your upcoming shifts on Apple Watch
-- Quickly send your shifts in iMessages
+- Quickly text your schedule via the iMessage app
 
 
 Shifty has an IAP that unlocks additional shift groups.

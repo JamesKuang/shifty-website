@@ -1,0 +1,14 @@
+---
+layout: default
+title:  "2.0.0 - This is a big update!"
+date:   2016-6-1 09:42:00 -0500
+categories: shifty update
+---
+
+What's new you ask? Everything!
+* The #1 most requested feature is here! You can now mark multiple shifts in Shifty. 6 to be exact!
+* Templates have been replaced with Shift Groups, which are a lot more powerful. Each Shift Group can have its own export settings and a dot color (more to come!).
+* View up to 3 shifts per day.
+* A brand new look and app icon.
+* Landscape support on iPad. You weren't holding it wrong, I was just lazy.
+* Check out the new FAQs section, where you'll find cool ways to use Shifty and other tips and tricks.

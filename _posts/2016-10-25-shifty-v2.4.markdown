@@ -1,0 +1,17 @@
+---
+layout: default
+title:  "2.4.0"
+date:   2016-10-25 09:42:00 -0500
+categories: shifty update
+---
+
+Main app: 
+* See up to 4 visible shifts (up from 3). 
+* Add up to 8 shift groups (up from 6). 
+* Two new shift colors (pink and gray) to supplement the additional shift groups. 
+* Use 3D touch on a shift group to quickly edit it. 
+* See shift times on 3D touch shortcuts. 
+
+Apple Watch: 
+* watchOS 3 support. 
+* View more shift information on your Apple Watch, such as name and start/end times.

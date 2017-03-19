@@ -1,0 +1,8 @@
+---
+layout: default
+title:  "2.3.0"
+date:   2016-10-7 09:42:00 -0500
+categories: shifty update
+---
+
+* iMessage app extension - Share your schedule easily from within iMessage

@@ -1,0 +1,9 @@
+---
+layout: default
+title:  "2.5.0"
+date:   2016-12-04 09:42:00 -0500
+categories: shifty update
+---
+
+* New Today extension to view your upcoming week of shifts. 
+* Select which Shift Group to display on your Apple Watch.
