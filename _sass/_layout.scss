@@ -42,7 +42,6 @@ a:hover {
 }
 header {
 	background-image: url("../assets/website_background.png");
-	background-position: 30% 80%;
 	background-attachment: fixed;
 	padding: 0px 15px;
 	text-align: center;
@@ -67,6 +66,9 @@ header {
 	}
 	ol {
 		list-style: none;
+	}
+	img {
+		height: 6em;
 	}
 }
 main {
