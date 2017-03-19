@@ -5,7 +5,7 @@
                 <li><a href="{{ site.url }}">Home</a></li>
                 <li><a href="https://itunes.apple.com/us/app/apple-store/id718617321?mt=8">Download</a></li>
                 <!--<li><a href="https://itunes.apple.com/us/app/apple-store/id718617321?mt=8"><img src="{{ site.url }}/assets/download_on_app_store.png" alt="Download on App Store</a>" /></a></li>-->
-                {% for page in site.pages %} {% if page.title %} {% if page.title != "Press" %}
+                {% for page in site.pages %} {% if page.title %} {% if page.title != 'Press Kit' %}
                 <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
                 {% endif %} {% endif %} {% endfor %}
             </ul>

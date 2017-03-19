@@ -1,19 +1,19 @@
 ---
 layout: page
-title: Press
+title: Press Kit
 permalink: /press/
 ---
 
-Shifty v2.0 is available on the App Store. Download the media kit here.
+Shifty is available on the [App Store](https://itunes.apple.com/us/app/apple-store/id718617321?mt=8). Download the media kit [here]({{ site.url }}/assets/downloads/Shifty 2.0 Press Kit.zip).
 
-Product
+#### Product
 
 Shifty is a simple shift calendar for all kinds of crazy schedules.
 
 Shifty makes it easy to add and view events that always change, which are common among shift workers like nurses, doctors, retail staff, etc. These schedules are usually unpredictable, and adding them to a calendar is not the best experience on traditional calendar apps. Shifty allows users to easily tap to mark their work days, and export shifts all at once with the same start/end times. Users can further take advantage of iCloud calendar sharing to let family and friends see which days they work.
 
 
-Features
+#### Features
 
 • Simply tap on the dates you work to mark them
 • Assign different start and end times for each shift
@@ -28,6 +28,6 @@ Features
 Shifty has an IAP that unlocks a couple convenience features like additional shift groups and the ability to export to more calendars.
  
 
-About
+#### About
 
-I'm James Kuang, an iOS developer at Fieldlens in NYC and I work on Shifty in my free time. Get in touch with me here.
+I'm [James Kuang]({{ site.url }}/about), an iOS developer in NYC and I work on Shifty on my free time.
