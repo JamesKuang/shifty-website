@@ -3,12 +3,14 @@
         <nav>
             <ul class="nav-container">
                 <li><a href="{{ site.url }}">Home</a></li>
-                {% for page in site.pages %} {% if (page.title == 'Press Kit' || page.title == 'Privacy Policy') %}
-                <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-                {% endif %} {% endfor %}
+                {% for page in site.pages %}
+                    {% if (page.title == 'Press Kit' or page.title == 'Privacy Policy') %}
+                        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+                    {% endif %}
+                {% endfor %}
             </ul>
         </nav>
     </div>
-	<p>By <a href="http://jameskuang.com">James Kuang</a>  (<a href="https://twitter.com/jamskuang">@jamskuang</a>)</p>
+	<p>By <a href="https://jameskuang.com">James Kuang</a>  (<a href="https://twitter.com/jamskuang">@jamskuang</a>)</p>
     <p style="font-size: 11pt;">© Jie Hui Kuang</p>
 </footer>
