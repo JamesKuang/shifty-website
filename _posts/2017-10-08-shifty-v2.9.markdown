@@ -1,0 +1,8 @@
+---
+layout: default
+title:  "2.9.0"
+date:   2017-10-08 23:42:00 -0500
+categories: shifty update
+---
+
+* What? You just bought a new iPhone? Well you can just leave it in your pocket because you won't need it to view your upcoming shifts anymore. Introducing a brand new watchOS app, rebuilt from the ground up. Faster and more watchOS 4'er, whatever that means. Oh and of course, iOS 11 support too!

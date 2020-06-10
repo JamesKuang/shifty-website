@@ -1,0 +1,10 @@
+---
+layout: default
+title:  "2.8.0"
+date:   2017-08-09 23:42:00 -0500
+categories: shifty update
+---
+
+* Popular demand called for more colors. Hello Graphite and Maroon!
+* New delete confirmation to prevent you from accidentally deleting a shift group, because the new delete swipe gesture is too easy on iOS 11.
+* Bug fixes

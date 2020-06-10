@@ -1,0 +1,8 @@
+---
+layout: default
+title:  "2.10.0"
+date:   2018-05-01 23:42:00 -0500
+categories: shifty update
+---
+
+* Improved new user tutorial and some minor tweaks that you probably don't care about but I'm telling you anyway, so now you can choose whether to care about them, or not.

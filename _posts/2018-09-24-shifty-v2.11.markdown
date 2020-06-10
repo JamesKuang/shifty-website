@@ -1,0 +1,10 @@
+---
+layout: default
+title:  "2.11.0"
+date:   2018-09-24 23:42:00 -0500
+categories: shifty update
+---
+
+* Shifty on iOS now supports all the new iPhones.
+* Shifty on watchOS now supports Apple Watch Series 4.
+* Bug fixes.

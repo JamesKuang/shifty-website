@@ -1,0 +1,10 @@
+---
+layout: default
+title:  "2.7.0"
+date:   2017-04-21 23:42:00 -0500
+categories: shifty update
+---
+
+* New Export confirmation screen that shows you exactly what dates will be exported
+* Long press on the current month to quickly jump to other months. Almost like time travel!
+* Bug fixes for the iMessage app
