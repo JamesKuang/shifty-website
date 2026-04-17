@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Changelog - Shifty Calendar</title>
+    <meta name="description" content="Shifty Calendar version history and release notes.">
+    <link rel="canonical" href="https://www.shiftycalendar.com/changelog.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#16A085',
+                        'brand-dark': '#138D75',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background-color: #16A085; transition: width 0.2s ease; }
+        .nav-link:hover::after { width: 100%; }
+        .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .mobile-menu.open { max-height: 400px; }
+    </style>
+</head>
+<body class="bg-white text-gray-700 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2 text-gray-900 font-semibold text-lg">
+                    <img src="assets/shifty_icon_transparent_bg.png" alt="Shifty Calendar" class="h-8 w-8 rounded-lg">
+                    Shifty
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="/" class="nav-link text-sm font-medium text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="help.html" class="nav-link text-sm font-medium text-gray-600 hover:text-gray-900">Help</a>
+                    <a href="about.html" class="nav-link text-sm font-medium text-gray-600 hover:text-gray-900">About</a>
+                    <a href="changelog.html" class="nav-link text-sm font-medium text-brand">Changelog</a>
+                    <a href="https://apps.apple.com/us/app/shifty-shift-worker-calendar/id718617321" class="inline-flex items-center gap-1.5 bg-brand text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-brand-dark transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        Download
+                    </a>
+                </div>
+                <button id="mobile-toggle" class="md:hidden p-2 text-gray-600 hover:text-gray-900" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="py-3 space-y-1 border-t border-gray-100">
+                    <a href="/" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg">Home</a>
+                    <a href="help.html" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg">Help</a>
+                    <a href="about.html" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg">About</a>
+                    <a href="changelog.html" class="block px-3 py-2 text-sm font-medium text-brand rounded-lg">Changelog</a>
+                    <a href="https://apps.apple.com/us/app/shifty-shift-worker-calendar/id718617321" class="block px-3 py-2 text-sm font-medium text-brand hover:bg-brand/5 rounded-lg">Download on App Store</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="pt-28 pb-20">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">Changelog</h1>
+
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="absolute left-4 top-2 bottom-2 w-px bg-gray-200"></div>
+
+                <div class="space-y-10">
+
+                    <!-- v2.13 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Jan 19, 2019</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.13.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Add Notes to your shifts. Notes also export along with your shifts.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Quickly go to the Export screen when you 3D Touch on a shift row.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>More shifts! You can now have up to 12.</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.12 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Dec 6, 2018</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.12.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>UI tweaks to bring out the "Go to month" option. You can still long press the current Month to quickly jump to another month.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>A new shift group color: 'Sky'</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.11 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Sep 24, 2018</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.11.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Shifty on iOS now supports all the new iPhones.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Shifty on watchOS now supports Apple Watch Series 4.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Bug fixes.</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.10 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">May 1, 2018</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.10.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Improved new user tutorial and some minor tweaks that you probably don't care about but I'm telling you anyway, so now you can choose whether to care about them, or not.</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.9 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Oct 8, 2017</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.9.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>What? You just bought a new iPhone? Well you can just leave it in your pocket because you won't need it to view your upcoming shifts anymore. Introducing a brand new watchOS app, rebuilt from the ground up. Faster and more watchOS 4'er, whatever that means. Oh and of course, iOS 11 support too!</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.8 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Aug 9, 2017</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.8.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Popular demand called for more colors. Hello Graphite and Maroon!</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>New delete confirmation to prevent you from accidentally deleting a shift group, because the new delete swipe gesture is too easy on iOS 11.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Bug fixes</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.7 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Apr 21, 2017</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.7.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>New Export confirmation screen that shows you exactly what dates will be exported</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Long press on the current month to quickly jump to other months. Almost like time travel!</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Bug fixes for the iMessage app</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.6 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Mar 13, 2017</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.6.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>View all your shifts! Why was the max 4? Nonsense, that was!</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>In the Today extension, dots got larger, or in circle speak, more radial...</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>When Exporting shifts, the new behavior will now only export today and future dates. Because your shifts are obviously only in the future...just like your sick days.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Calendar performance improvements. It was literally completely swapped. Still looks the same tho, more or less.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Bug fixes. Because why not?</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.5 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Dec 4, 2016</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.5.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>New Today extension to view your upcoming week of shifts.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Select which Shift Group to display on your Apple Watch.</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.4 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Oct 25, 2016</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.4.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>See up to 4 visible shifts (up from 3).</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Add up to 8 shift groups (up from 6).</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Two new shift colors (pink and gray) to supplement the additional shift groups.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Use 3D touch on a shift group to quickly edit it.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>See shift times on 3D touch shortcuts.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>watchOS 3 support.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>View more shift information on your Apple Watch, such as name and start/end times.</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.3 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Oct 7, 2016</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.3.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>iMessage app extension - Share your schedule easily from within iMessage</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.2 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Jul 27, 2016</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.2.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>You can now re-order your shift groups. Simply hold your finger over any shift group and drag it up or down.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Fixed an issue that sometimes caused a failure when making the In-App purchase.</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.1 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Jun 5, 2016</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.1.0</h3>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>The share screenshot button is back and lives on the top right of the calendar screen.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Fixed a crash on app open for users upgrading from a previous version.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Fixed a bug that prevented exporting dates when the end time is on the next day.</li>
+                        </ul>
+                    </div>
+
+                    <!-- v2.0 -->
+                    <div class="relative pl-12">
+                        <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-brand ring-4 ring-white"></div>
+                        <p class="text-sm text-gray-400 mb-1">Jun 1, 2016</p>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">2.0.0 - This is a big update!</h3>
+                        <p class="text-gray-600 text-[15px] mb-2">What's new you ask? Everything!</p>
+                        <ul class="text-gray-600 space-y-1.5 text-[15px]">
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>The #1 most requested feature is here! You can now mark multiple shifts in Shifty. 6 to be exact!</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Templates have been replaced with Shift Groups, which are a lot more powerful. Each Shift Group can have its own export settings and a dot color (more to come!).</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>View up to 3 shifts per day.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>A brand new look and app icon.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Landscape support on iPad. You weren't holding it wrong, I was just lazy.</li>
+                            <li class="flex gap-2"><span class="text-brand mt-0.5">&#8226;</span>Check out the new FAQs section, where you'll find cool ways to use Shifty and other tips and tricks.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 py-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4 text-sm text-gray-500">
+                    <a href="press.html" class="hover:text-gray-700 transition-colors">Press Kit</a>
+                    <span class="text-gray-300">|</span>
+                    <a href="privacy.html" class="hover:text-gray-700 transition-colors">Privacy Policy</a>
+                </div>
+                <div class="text-sm text-gray-400 text-center sm:text-right">
+                    <p>By <a href="https://www.jameskuang.com" class="text-gray-500 hover:text-gray-700 transition-colors">James Kuang</a> · <a href="https://twitter.com/jamskuang" class="text-gray-500 hover:text-gray-700 transition-colors">@jamskuang</a></p>
+                    <p class="mt-1">&copy; Jie Hui Kuang</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Help - Shifty Calendar</title>
+    <meta name="description" content="Get help with Shifty Calendar. Find FAQs, contact support, and get your questions answered.">
+    <link rel="canonical" href="https://www.shiftycalendar.com/help.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#16A085',
+                        'brand-dark': '#138D75',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background-color: #16A085; transition: width 0.2s ease; }
+        .nav-link:hover::after { width: 100%; }
+        .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .mobile-menu.open { max-height: 400px; }
+    </style>
+</head>
+<body class="bg-white text-gray-700 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2 text-gray-900 font-semibold text-lg">
+                    <img src="assets/shifty_icon_transparent_bg.png" alt="Shifty Calendar" class="h-8 w-8 rounded-lg">
+                    Shifty
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="/" class="nav-link text-sm font-medium text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="help.html" class="nav-link text-sm font-medium text-brand">Help</a>
+                    <a href="about.html" class="nav-link text-sm font-medium text-gray-600 hover:text-gray-900">About</a>
+                    <a href="changelog.html" class="nav-link text-sm font-medium text-gray-600 hover:text-gray-900">Changelog</a>
+                    <a href="https://apps.apple.com/us/app/shifty-shift-worker-calendar/id718617321" class="inline-flex items-center gap-1.5 bg-brand text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-brand-dark transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        Download
+                    </a>
+                </div>
+                <button id="mobile-toggle" class="md:hidden p-2 text-gray-600 hover:text-gray-900" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="py-3 space-y-1 border-t border-gray-100">
+                    <a href="/" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg">Home</a>
+                    <a href="help.html" class="block px-3 py-2 text-sm font-medium text-brand rounded-lg">Help</a>
+                    <a href="about.html" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg">About</a>
+                    <a href="changelog.html" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg">Changelog</a>
+                    <a href="https://apps.apple.com/us/app/shifty-shift-worker-calendar/id718617321" class="block px-3 py-2 text-sm font-medium text-brand hover:bg-brand/5 rounded-lg">Download on App Store</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="pt-28 pb-20">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">Help</h1>
+
+            <div class="bg-gray-50 rounded-2xl p-8 sm:p-10 mb-8">
+                <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-brand/10 rounded-xl flex items-center justify-center">
+                        <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-lg font-semibold text-gray-900 mb-2">Frequently Asked Questions</h2>
+                        <p class="text-gray-600 leading-relaxed">Please check out the <a href="https://shifty.helpshift.com/a/shifty/" class="text-brand font-medium hover:text-brand-dark transition-colors underline decoration-brand/30 hover:decoration-brand">FAQs</a> first for answers to common questions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-2xl p-8 sm:p-10">
+                <div class="flex items-start gap-4">
+                    <div class="flex-shrink-0 w-10 h-10 bg-brand/10 rounded-xl flex items-center justify-center">
+                        <svg class="w-5 h-5 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h2 class="text-lg font-semibold text-gray-900 mb-2">Get in Touch</h2>
+                        <p class="text-gray-600 leading-relaxed">Still have questions, feature suggestions or feedback? I'd love to hear all about them, good or bad. Please get in touch with me on Twitter (<a href="https://twitter.com/jamskuang" class="text-brand font-medium hover:text-brand-dark transition-colors">@jamskuang</a>) or email <a href="mailto:incyc.apps@gmail.com" class="text-brand font-medium hover:text-brand-dark transition-colors">incyc.apps@gmail.com</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 py-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4 text-sm text-gray-500">
+                    <a href="press.html" class="hover:text-gray-700 transition-colors">Press Kit</a>
+                    <span class="text-gray-300">|</span>
+                    <a href="privacy.html" class="hover:text-gray-700 transition-colors">Privacy Policy</a>
+                </div>
+                <div class="text-sm text-gray-400 text-center sm:text-right">
+                    <p>By <a href="https://www.jameskuang.com" class="text-gray-500 hover:text-gray-700 transition-colors">James Kuang</a> · <a href="https://twitter.com/jamskuang" class="text-gray-500 hover:text-gray-700 transition-colors">@jamskuang</a></p>
+                    <p class="mt-1">&copy; Jie Hui Kuang</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

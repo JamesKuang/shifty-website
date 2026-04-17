@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Press Kit - Shifty Calendar</title>
+    <meta name="description" content="Shifty Calendar press kit. Download screenshots, app information, and media assets.">
+    <link rel="canonical" href="https://www.shiftycalendar.com/press.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#16A085',
+                        'brand-dark': '#138D75',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .nav-link { position: relative; }
+        .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background-color: #16A085; transition: width 0.2s ease; }
+        .nav-link:hover::after { width: 100%; }
+        .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+        .mobile-menu.open { max-height: 400px; }
+    </style>
+</head>
+<body class="bg-white text-gray-700 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-16">
+                <a href="/" class="flex items-center gap-2 text-gray-900 font-semibold text-lg">
+                    <img src="assets/shifty_icon_transparent_bg.png" alt="Shifty Calendar" class="h-8 w-8 rounded-lg">
+                    Shifty
+                </a>
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="/" class="nav-link text-sm font-medium text-gray-600 hover:text-gray-900">Home</a>
+                    <a href="help.html" class="nav-link text-sm font-medium text-gray-600 hover:text-gray-900">Help</a>
+                    <a href="about.html" class="nav-link text-sm font-medium text-gray-600 hover:text-gray-900">About</a>
+                    <a href="changelog.html" class="nav-link text-sm font-medium text-gray-600 hover:text-gray-900">Changelog</a>
+                    <a href="https://apps.apple.com/us/app/shifty-shift-worker-calendar/id718617321" class="inline-flex items-center gap-1.5 bg-brand text-white text-sm font-medium px-4 py-2 rounded-lg hover:bg-brand-dark transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                        Download
+                    </a>
+                </div>
+                <button id="mobile-toggle" class="md:hidden p-2 text-gray-600 hover:text-gray-900" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="mobile-menu md:hidden">
+                <div class="py-3 space-y-1 border-t border-gray-100">
+                    <a href="/" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg">Home</a>
+                    <a href="help.html" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg">Help</a>
+                    <a href="about.html" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg">About</a>
+                    <a href="changelog.html" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg">Changelog</a>
+                    <a href="https://apps.apple.com/us/app/shifty-shift-worker-calendar/id718617321" class="block px-3 py-2 text-sm font-medium text-brand hover:bg-brand/5 rounded-lg">Download on App Store</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main class="pt-28 pb-20">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-10">Press Kit</h1>
+
+            <!-- Screenshots -->
+            <div class="flex flex-wrap justify-center gap-4 sm:gap-6 mb-12">
+                <img src="assets/iPhone6-01CalendarScreen.png" alt="Shifty Calendar Screen" class="w-48 sm:w-56 rounded-xl shadow-lg">
+                <img src="assets/iPhone6-02EditShiftScreen.png" alt="Shifty Edit Shift Screen" class="w-48 sm:w-56 rounded-xl shadow-lg">
+                <img src="assets/iPhone6-04ShiftColorsScreen.png" alt="Shifty Shift Colors Screen" class="w-48 sm:w-56 rounded-xl shadow-lg">
+            </div>
+
+            <!-- Links -->
+            <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
+                <a href="https://apps.apple.com/us/app/shifty-shift-worker-calendar/id718617321" class="inline-flex items-center gap-2 bg-brand text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-brand-dark transition-colors">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                    View on App Store
+                </a>
+                <a href="assets/downloads/Shifty 2.0 Press Kit.zip" class="inline-flex items-center gap-2 bg-gray-100 text-gray-700 text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-gray-200 transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                    </svg>
+                    Download Media Kit
+                </a>
+            </div>
+
+            <!-- Product -->
+            <section class="mb-10">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">Product</h2>
+                <div class="text-gray-600 leading-relaxed space-y-4">
+                    <p>Shifty is a simple shift calendar for all kinds of crazy schedules.</p>
+                    <p>Shifty makes it easy to add and view events that always change, which are common among shift workers like nurses, doctors, retail staff, etc. These schedules are usually unpredictable, and adding them to a calendar is not the best experience on traditional calendar apps. Shifty allows users to easily tap to mark their work days, and export shifts all at once with the same start/end times. Users can further take advantage of iCloud calendar sharing to let family and friends see which days they work.</p>
+                </div>
+            </section>
+
+            <!-- Features -->
+            <section class="mb-10">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">Features</h2>
+                <ul class="text-gray-600 space-y-2.5">
+                    <li class="flex gap-3">
+                        <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        Simply tap on the dates you work to mark them
+                    </li>
+                    <li class="flex gap-3">
+                        <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        Assign different start and end times for each shift
+                    </li>
+                    <li class="flex gap-3">
+                        <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        Create up to 8 shifts to track different shift times, sick and vacation days, etc.
+                    </li>
+                    <li class="flex gap-3">
+                        <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        Export shifts to any of your external calendars (Google Calendar, iCloud calendar, etc.)
+                    </li>
+                    <li class="flex gap-3">
+                        <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        Have a photo of your schedule? Conveniently open it in Shifty and mark dates side by side
+                    </li>
+                    <li class="flex gap-3">
+                        <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        Universal app with iPad support
+                    </li>
+                    <li class="flex gap-3">
+                        <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        View your upcoming shifts on Apple Watch
+                    </li>
+                    <li class="flex gap-3">
+                        <svg class="w-5 h-5 text-brand flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                        Quickly text your schedule via the iMessage app
+                    </li>
+                </ul>
+                <p class="text-gray-500 text-sm mt-4">Shifty has an IAP that unlocks additional shift groups.</p>
+            </section>
+
+            <!-- About -->
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">About</h2>
+                <p class="text-gray-600 leading-relaxed">I'm <a href="about.html" class="text-brand font-medium hover:text-brand-dark transition-colors">James Kuang</a>, an iOS developer in NYC and I work on Shifty on my free time.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 py-12">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-4 text-sm text-gray-500">
+                    <a href="press.html" class="hover:text-gray-700 transition-colors">Press Kit</a>
+                    <span class="text-gray-300">|</span>
+                    <a href="privacy.html" class="hover:text-gray-700 transition-colors">Privacy Policy</a>
+                </div>
+                <div class="text-sm text-gray-400 text-center sm:text-right">
+                    <p>By <a href="https://www.jameskuang.com" class="text-gray-500 hover:text-gray-700 transition-colors">James Kuang</a> · <a href="https://twitter.com/jamskuang" class="text-gray-500 hover:text-gray-700 transition-colors">@jamskuang</a></p>
+                    <p class="mt-1">&copy; Jie Hui Kuang</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
